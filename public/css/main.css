@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Arapey');
+.book{
+	height:250px;
+
+}
+h1{
+	font-family:'Arapey';
+}
+.book img{
+		box-shadow:1px 1px 1px black;
+	border:solid 1px grey;
+}
+.pics{
+	float:left;
+	padding:15px 30px 10px 5px;
+}
+.poka{
+	margin:15px;
+}
