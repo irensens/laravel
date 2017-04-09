@@ -17,3 +17,12 @@ h1{
 .poka{
 	margin:15px;
 }
+.form_cart {
+	margin-right:0;
+}
+.form_cart tr .hPb{
+	display: none;
+}
+.navbar-header{
+	float:right;
+}

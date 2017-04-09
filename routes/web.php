@@ -13,6 +13,8 @@
 
 Route::get('/', 'BaseController@getIndex' );
 Route::get('/book/{id}','BookController@getOne');
+Route::get('/catalog/{id}','BookController@getCat');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
