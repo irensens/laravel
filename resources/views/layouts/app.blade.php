@@ -35,7 +35,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-					<div id="basket" class="form_cart">
+					
+					
+                    <!-- Branding Image -->
+                    <a class="navbar-brand laravel" href="{{ url('/') }}">
+                        {{ config('app.name', 'Laravel') }}
+                    </a>
+					<div id="basket" class="form_cart cart">
 <table >
 <tbody>
 <tr   class="hPb">
@@ -46,16 +52,13 @@
 <td>Сумма: &asymp; </td>
 <td><span id="totalPrice">0</span> руб.</td>
 </tr>
-<tr  class="hPb">
-<td>Куки:</td>
-<td><span id="gugu">0</span> </td>
-</tr>
+
 <tr style="display: table-row;" class="hPe">
 <td colspan="2">Корзина пуста</td>
 </tr>
 <tr>
-<td><a style="display: none;" id="clearBasket" href="#">Очистить</a></td>
-<td><a style="display: none;" id="checkOut" href="#">Оформить</a></td>
+<td><a style="display: none;" id="clearBasket" href="http://laravel:81/home">Очистить</a></td>
+<td><a style="display: none;" id="checkOut" href="http://laravel:81/home">Оформить</a></td>
 </tr>
 </tbody>
 </table>
@@ -70,10 +73,6 @@
 }
 </style>
 
-                    <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
-                    </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">

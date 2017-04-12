@@ -31,6 +31,7 @@
                 </li>
             @endif
             @foreach($menus as $menu)
+			@if($menu->menu_type != '')
                 @if($menu->menu_type != 2 && is_null($menu->parent_id))
                     @if(Auth::user()->role->canAccessMenu($menu))
                         <li @if(isset(explode('/',Request::path())[1]) && explode('/',Request::path())[1] == strtolower($menu->name)) class="active" @endif>
@@ -66,6 +67,7 @@
                         </li>
                     @endif
                 @endif
+			  @endif
             @endforeach
             <li>
                 {!! Form::open(['url' => 'logout']) !!}
