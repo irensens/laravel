@@ -17,4 +17,6 @@ Route::get('/catalog/{id}','BookController@getCat');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+Route::post('/home', 'HomeController@postIndex');
+Route::get('/{id}', 'PageController@getIndex');
 

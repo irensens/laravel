@@ -38,9 +38,13 @@
 					
 					
                     <!-- Branding Image -->
-                    <a class="navbar-brand laravel" href="{{ url('/') }}">
+                    <a class="laravel" href="{{ url('/') }}">
                         {{ config('app.name', 'Laravel') }}
                     </a>
+					<a href="/contacts" class="laravel">Контакты
+					</a>
+					<a href="/about" class="laravel">О нас
+					</a>
 					<div id="basket" class="form_cart cart">
 <table >
 <tbody>

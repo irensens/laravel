@@ -6,7 +6,8 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Личный кабинет</div>
 				                <div class="panel-body">
-								<form class="form-horizontal" action="/order" method="POST">
+								<form class="form-horizontal" action="/home" method="POST">
+								{!!csrf_field()!!}
 				<table width=100% class="table table-bordered table-stripted">
 				<tr>
 				 <th>Изображение</th>
@@ -43,23 +44,23 @@
 				  <div class="control-group">
 					<label class="control-label" for="inputName">Имя</label>
 					<div class="controls">
-					  <input type="text" id="inputName" placeholder="Name">
+					  <input type="text" name="name" id="inputName" placeholder="Name">
 					</div>
 				  </div>
 				  <div class="control-group">
 					<label class="control-label" for="inputNumber">Телефон</label>
 					<div class="controls">
-					  <input type="text" id="inputNumber" placeholder="Number">
+					  <input type="text" name="phone" id="inputNumber" placeholder="Number">
 					</div>
 					 <div class="control-group">
 					<label class="control-label" for="inputAdress">Адрес</label>
 					<div class="controls">
-					  <input type="text" id="inputAdress" placeholder="Adress">
+					  <input type="text" name="address" id="inputAdress" placeholder="Adress">
 					</div>
 				  </div>
 				 <br>
 					
-					  	<button type="button" class="button_" data-toggle="collapse" data-target="#app-navbar-collapse">Подтвердить</button>
+					  	<input type="submit" class="button_" data-toggle="collapse" data-target="#app-navbar-collapse" value="Подтвердить" />
 				
 				  
 				
